@@ -4,8 +4,8 @@
     <ID name="entity" mc="Infrastructure.Stereotype" uid="bdbba2f0-f81c-4212-93ab-275231ba0812"/>
     <PID name="LocalProfile" mc="Infrastructure.Profile" uid="f081cc8d-fd25-407b-b344-896c8bfb51c2"/>
     <ATTRIBUTES>
-      <ATT name="Image"></ATT>
-      <ATT name="Icon"></ATT>
+      <ATT name="Image"><![CDATA[entity-48.png]]></ATT>
+      <ATT name="Icon"><![CDATA[entity-24.png]]></ATT>
       <ATT name="IsHidden">false</ATT>
       <ATT name="IsAbstract">false</ATT>
       <ATT name="LabelKey"><![CDATA[entity]]></ATT>
