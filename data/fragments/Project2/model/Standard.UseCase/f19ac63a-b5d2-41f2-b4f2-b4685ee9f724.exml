@@ -1,0 +1,120 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Просмотр отчетов и графиков" version="4">
+  <OBJECT>
+    <ID name="Просмотр отчетов и графиков" mc="Standard.UseCase" uid="f19ac63a-b5d2-41f2-b4f2-b4685ee9f724"/>
+    <PID name="use case view" mc="Standard.Package" uid="010a982e-146d-45f8-94cc-f3c4bff3b572"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Просмотр отчетов и графиков]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="14824a81-8141-4965-9fee-fa0c9614eb94"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[....Получить аналитику по работе организации.
+Основной поток:
+8.1. Руководитель выбирает тип отчета.
+8.2. Руководитель задает временной период.
+8.3. Система агрегирует данные.
+8.4. Система строит графики:
+8.4.1. Суммарное количество часов работы устройств за период.
+8.4.2. Суммарное количество часов работы инструкторов за период.
+8.4.3. Суммарное количество часов занятий за период.
+8.4.4. Минимальное и максимальное количество часов работы по периодам.
+8.4.5. График занятости инструкторов за период.
+8.4.6. Количество человек, пришедших на занятия\полёты за период.
+8.5. Система отображает отчет на экране.
+]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="767ad435-6071-410f-acab-c6d8255b0a1f"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="constraint" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-251b-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="c2af58c5-7fb7-4f1e-a2c5-d5d6d7a3de72"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="non-functional constraint" mc="Infrastructure.NoteType" uid="00bc0c08-0000-242c-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="5e9dd848-c098-4264-b6f3-99a08e875a16"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...Дополнительный поток D1 (Экспорт):
+D1.1. Руководитель нажимает «Экспорт».
+D1.2. Система сохраняет отчет в файл (PDF/Excel).
+]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="exception" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-2519-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="baae1038-a1ca-4a73-bf3e-7830ede97cf7"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...Руководитель авторизован, есть данные за период.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="precondition" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-2515-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="b59f6333-b7cf-400f-bfc9-9aae1e2039c7"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Руководитель получил аналитические данные.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="postcondition" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-2517-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

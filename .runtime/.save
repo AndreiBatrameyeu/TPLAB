@@ -1,0 +1,10 @@
+#Fri Oct 23 21:59:20 MSK 2026
+org.modelio.app.diagram.editor.OpenedDiagrams0='use case view Use Case diagram' {cf5631ed-8647-4655-99b0-571760b90097} Standard.UseCaseDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams3='Activity diagram \u043E\u0442\u043C\u0435\u043D\u044B \u0431\u0440\u043E\u043D\u0438' {5390214d-78b1-4c53-9488-93fe74f68410} Standard.ActivityDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams4='MVC Class diagram' {99ab9ee5-ebf4-47bd-8990-e2a9b8e5f196} Standard.ClassDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams1='Activity diagram \u043F\u0440\u043E\u0441\u043C\u043E\u0442\u0440\u0430 \u0441\u0432\u043E\u0438\u0445 \u0431\u0440\u043E\u043D\u0435\u0439' {3f952cec-edc6-40c3-9f96-d0b3cce1b49d} Standard.ActivityDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams2='Activity diagram \u0437\u0430\u043C\u043E\u0440\u043E\u0437\u043A\u0438 \u0430\u0431\u043E\u043D\u0435\u043C\u0435\u043D\u0442\u043E\u0432' {5a3d16fd-b245-4f8d-8db1-69314c1a5438} Standard.ActivityDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams7='General Class Diagram' {1a0cb542-6049-4472-85bc-d6c5e4088fac} Standard.ClassDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams8='project2 Object diagram' {3fbeb2fd-0941-466b-b2d6-51a3ff033780} Standard.ObjectDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams5='model diagram' {0972edf8-6d78-4368-a8e9-93aec2d26e56} Standard.ClassDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams6='Package diagram' {187b7d8d-da27-466f-bd2f-8a46ccaae995} Standard.ClassDiagram

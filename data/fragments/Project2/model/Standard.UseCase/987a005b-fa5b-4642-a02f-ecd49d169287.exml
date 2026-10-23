@@ -1,0 +1,133 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Авторизация в системе" version="4">
+  <OBJECT>
+    <ID name="Авторизация в системе" mc="Standard.UseCase" uid="987a005b-fa5b-4642-a02f-ecd49d169287"/>
+    <PID name="use case view" mc="Standard.Package" uid="010a982e-146d-45f8-94cc-f3c4bff3b572"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Авторизация в системе]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="26464582-fc98-477f-a2b3-473fd99b6330"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Получить доступ к функционалу системы (войти в существующую учетную запись или создать новую).
+Основной поток (Вход в систему):
+1.1. Пользователь открывает систему.
+1.2. Система отображает форму авторизации с полями «Логин/Телефон» и «Пароль», а также ссылкой «Зарегистрироваться».
+1.3. Пользователь вводит свои учетные данные (телефон и пароль).
+1.4. Пользователь нажимает кнопку «Войти».
+1.5. Система проверяет наличие учетной записи и корректность пароля.
+1.6. Система определяет роль пользователя (Клиент, Инструктор, Администратор, Руководитель).
+1.7. Система открывает главную страницу с соответствующими правами доступа.
+]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="ee6e084a-6a31-4e18-8ec5-92cbc723f9be"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="constraint" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-251b-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="b67ed2aa-03e9-4723-b802-2130b277d09e"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="non-functional constraint" mc="Infrastructure.NoteType" uid="00bc0c08-0000-242c-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="2affb6f2-d051-4988-b8af-9923c13fda78"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Альтернативный поток A1 (Пользователь не зарегистрирован / Регистрация):
+A1.1. На шаге 1.2 Пользователь нажимает ссылку «Зарегистрироваться» (или Система на шаге 1.5 сообщает, что пользователь не найден).
+A1.2. Система отображает форму регистрации.
+A1.3. Пользователь вводит обязательные данные: ФИО и номер телефона.
+A1.4. Пользователь придумывает и вводит пароль.
+A1.5. Пользователь нажимает кнопку «Зарегистрироваться».
+A1.6. Система проверяет корректность данных (формат телефона, уникальность номера).
+A1.7. Система создает новую учетную запись с ролью «Клиент».
+A1.8. Система автоматически авторизует пользователя и открывает главную страницу.
+Альтернативный поток A2 (Неверный пароль):
+A2.1. На шаге 1.5 Система обнаруживает несоответствие пароля.
+A2.2. Система выдает сообщение «Неверный логин или пароль».
+A2.3. Система предлагает повторить ввод.
+A2.4. Возврат к шагу 1.3.
+
+Альтернативный поток A3 (Некорректные данные при регистрации):
+A3.1. На шаге A1.6 Система обнаруживает, что телефон уже используется или введен неверный формат.
+A3.2. Система подсвечивает проблемное поле и выдает сообщение об ошибке.
+A3.3. Возврат к шагу A1.3.
+
+]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="exception" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-2519-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="d15e0bb7-f1ef-4578-8f56-b24470c7202a"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...отсутствуют]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="precondition" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-2515-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="56e7d342-793a-4008-92b1-feaaad553f15"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...Пользователь авторизован, создана сессия.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="postcondition" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-2517-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,364 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="project2" version="4">
+  <OBJECT>
+    <ID name="project2" mc="Standard.Package" uid="eb7b41b3-7460-4d78-9d5e-e7140cacecd1"/>
+    <PID name="Project2" mc="Standard.Project" uid="11448a97-04f3-46d5-b071-410255d05b90"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[project2]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Declared">
+        <OBJECT>
+          <ID name="client1" mc="Standard.Instance" uid="d4d35a36-0f70-4077-b0e4-1e24a35884b8"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"><![CDATA[client1]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="OwnedEnd">
+              <OBJECT>
+                <ID name="booking1" mc="Standard.LinkEnd" uid="77868dbd-4b22-4897-a10b-0c9b089bc251"/>
+                <ATTRIBUTES>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="Name"><![CDATA[booking1]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Link">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Link" uid="2629f0af-b63b-43f5-a37e-06113d906dee"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="booking1" mc="Standard.Instance" uid="a05182d8-36d6-41dc-9d43-a968ef96f5b9"/>
+                    </REFOBJ>
+                  </LINK>
+                  <COMP relation="Opposite">
+                    <OBJECT>
+                      <ID name="" mc="Standard.LinkEnd" uid="52ea6d78-8a9b-40c3-b07b-40dccaa7353f"/>
+                      <ATTRIBUTES>
+                        <ATT name="IsOrdered">false</ATT>
+                        <ATT name="IsUnique">false</ATT>
+                        <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                        <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Link">
+                          <COMPID name="" mc="Standard.Link" uid="2629f0af-b63b-43f5-a37e-06113d906dee"/>
+                        </COMP>
+                        <COMP relation="Opposite">
+                          <COMPID name="booking1" mc="Standard.LinkEnd" uid="77868dbd-4b22-4897-a10b-0c9b089bc251"/>
+                        </COMP>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Base">
+              <ID name="Client" mc="Standard.Class" uid="bffaebe5-df23-415c-a0b5-97f2af705a10"/>
+            </LINK>
+            <COMP relation="Part">
+              <OBJECT>
+                <ID name="Port" mc="Standard.Port" uid="833e577c-6533-418d-bb34-c6d6091642a6"/>
+                <ATTRIBUTES>
+                  <ATT name="IsBehavior">false</ATT>
+                  <ATT name="IsService">true</ATT>
+                  <ATT name="IsConjugated">false</ATT>
+                  <ATT name="Direction">None</ATT>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[Port]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="RepresentedFeature">
+                    <REFOBJ>
+                      <ID name="Port" mc="Standard.Port" uid="ae45252d-3b8e-4438-b239-9919b648e9b6"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="c161f0f7-b7ad-4330-a513-7f3e759b1089"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="booking1" mc="Standard.Instance" uid="a05182d8-36d6-41dc-9d43-a968ef96f5b9"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"><![CDATA[bookingId = 101, bookingDate = "2026-10-25", status = "Подтверждена", peopleCount = 1, isPaid = true, typeOfFlightDevice = "Парашют"]]></ATT>
+            <ATT name="Name"><![CDATA[booking1]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="OwnedEnd">
+              <OBJECT>
+                <ID name="schedule" mc="Standard.LinkEnd" uid="a0d0f8f7-959f-4625-8b85-2aee3983c972"/>
+                <ATTRIBUTES>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="Name"><![CDATA[schedule]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Link">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Link" uid="4453797e-da4c-41b5-8bfd-21c0837bfa47"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="schedule" mc="Standard.Instance" uid="4ae80501-f5d3-42d2-95f5-9c81a4c267e8"/>
+                    </REFOBJ>
+                  </LINK>
+                  <COMP relation="Opposite">
+                    <OBJECT>
+                      <ID name="" mc="Standard.LinkEnd" uid="7db599ab-1307-44a5-ab86-bf47495a44bb"/>
+                      <ATTRIBUTES>
+                        <ATT name="IsOrdered">false</ATT>
+                        <ATT name="IsUnique">false</ATT>
+                        <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                        <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Link">
+                          <COMPID name="" mc="Standard.Link" uid="4453797e-da4c-41b5-8bfd-21c0837bfa47"/>
+                        </COMP>
+                        <COMP relation="Opposite">
+                          <COMPID name="schedule" mc="Standard.LinkEnd" uid="a0d0f8f7-959f-4625-8b85-2aee3983c972"/>
+                        </COMP>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="payment1" mc="Standard.LinkEnd" uid="c7b03983-7f08-4b67-9c86-9e857f4cb0c0"/>
+                <ATTRIBUTES>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="Name"><![CDATA[payment1]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Link">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Link" uid="c98a97e4-97fa-49ca-aa2d-9322a25e83e1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="payment1" mc="Standard.Instance" uid="de1d0ff5-c5fb-4d7b-98a9-12f1661eca0d"/>
+                    </REFOBJ>
+                  </LINK>
+                  <COMP relation="Opposite">
+                    <OBJECT>
+                      <ID name="" mc="Standard.LinkEnd" uid="340c2208-aefd-4554-aa38-0bd49d0d8294"/>
+                      <ATTRIBUTES>
+                        <ATT name="IsOrdered">false</ATT>
+                        <ATT name="IsUnique">false</ATT>
+                        <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                        <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Link">
+                          <COMPID name="" mc="Standard.Link" uid="c98a97e4-97fa-49ca-aa2d-9322a25e83e1"/>
+                        </COMP>
+                        <COMP relation="Opposite">
+                          <COMPID name="payment1" mc="Standard.LinkEnd" uid="c7b03983-7f08-4b67-9c86-9e857f4cb0c0"/>
+                        </COMP>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Base">
+              <ID name="Booking" mc="Standard.Class" uid="43ff7419-c8c3-4514-ac00-18edde5fd98a"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="schedule" mc="Standard.Instance" uid="4ae80501-f5d3-42d2-95f5-9c81a4c267e8"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"><![CDATA[slotId = 5, startTime = "12:00", endTime = "14:00", platformAddress = "Аэродром Боровая", date = "2026-10-25"]]></ATT>
+            <ATT name="Name"><![CDATA[schedule]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="OwnedEnd">
+              <OBJECT>
+                <ID name="instructor1" mc="Standard.LinkEnd" uid="25514683-9d09-405a-bc27-37c6f21877b9"/>
+                <ATTRIBUTES>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="Name"><![CDATA[instructor1]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Link">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Link" uid="0cc473de-9ea7-4cfe-a9a2-06d0d0b97633"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="instructor1" mc="Standard.Instance" uid="4e75fee8-57f6-40fc-93f7-7a46b5087bd4"/>
+                    </REFOBJ>
+                  </LINK>
+                  <COMP relation="Opposite">
+                    <OBJECT>
+                      <ID name="" mc="Standard.LinkEnd" uid="64344346-8eb1-4960-9284-f19f06841490"/>
+                      <ATTRIBUTES>
+                        <ATT name="IsOrdered">false</ATT>
+                        <ATT name="IsUnique">false</ATT>
+                        <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                        <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Link">
+                          <COMPID name="" mc="Standard.Link" uid="0cc473de-9ea7-4cfe-a9a2-06d0d0b97633"/>
+                        </COMP>
+                        <COMP relation="Opposite">
+                          <COMPID name="instructor1" mc="Standard.LinkEnd" uid="25514683-9d09-405a-bc27-37c6f21877b9"/>
+                        </COMP>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Base">
+              <ID name="Schedule " mc="Standard.Class" uid="2ccc090c-29c0-4dc2-ac3b-6e2c8c3462c8"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="instructor1" mc="Standard.Instance" uid="4e75fee8-57f6-40fc-93f7-7a46b5087bd4"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"><![CDATA[weeklyHours = 40, salaryRate = 25.5]]></ATT>
+            <ATT name="Name"><![CDATA[instructor1]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <ID name="Instructor" mc="Standard.Class" uid="7c3a54ac-f265-47a4-b886-0e8b2b53d157"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="payment1" mc="Standard.Instance" uid="de1d0ff5-c5fb-4d7b-98a9-12f1661eca0d"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"><![CDATA[paymentId = 555, amount = 150.0, isSuccessful = true]]></ATT>
+            <ATT name="Name"><![CDATA[payment1]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <ID name="Payment" mc="Standard.Class" uid="27cd278c-c07e-4022-a5b1-46c6e30e3421"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="use case view" mc="Standard.Package" uid="010a982e-146d-45f8-94cc-f3c4bff3b572"/>
+        <COMPID name="User" mc="Standard.Class" uid="5d6c57a0-6a9b-48a7-a1a4-978b7d56c792"/>
+        <COMPID name="Client" mc="Standard.Class" uid="bffaebe5-df23-415c-a0b5-97f2af705a10"/>
+        <COMPID name="Administrator" mc="Standard.Class" uid="a4e62252-b5e0-4699-a525-d38ba5774231"/>
+        <COMPID name="Instructor" mc="Standard.Class" uid="7c3a54ac-f265-47a4-b886-0e8b2b53d157"/>
+        <COMPID name="Leadership" mc="Standard.Class" uid="01b0730b-84d0-4d68-94b0-58f377556fb8"/>
+        <COMPID name="Aircraft " mc="Standard.Class" uid="02f05124-e058-4220-8877-1d622e383d39"/>
+        <COMPID name="Booking" mc="Standard.Class" uid="43ff7419-c8c3-4514-ac00-18edde5fd98a"/>
+        <COMPID name="Schedule " mc="Standard.Class" uid="2ccc090c-29c0-4dc2-ac3b-6e2c8c3462c8"/>
+        <COMPID name="Subscription" mc="Standard.Class" uid="e34b7a00-d021-4b1c-957d-632c893997f6"/>
+        <COMPID name="Payment" mc="Standard.Class" uid="27cd278c-c07e-4022-a5b1-46c6e30e3421"/>
+        <COMPID name="Model" mc="Standard.Package" uid="ebc5a2b9-90ae-4cb7-8eca-b532f662bab5"/>
+        <COMPID name="View" mc="Standard.Package" uid="5a2aca82-63e5-41cf-bd3a-05b686df3a32"/>
+        <COMPID name="Controller" mc="Standard.Package" uid="d409e5aa-7b32-48d3-aff4-5b69987c541f"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="model" mc="Standard.ClassDiagram" uid="852d1073-05bd-4e2a-b674-de0ae6e20691"/>
+        <COMPID name="Package diagram" mc="Standard.ClassDiagram" uid="187b7d8d-da27-466f-bd2f-8a46ccaae995"/>
+        <COMPID name="General Class Diagram" mc="Standard.ClassDiagram" uid="1a0cb542-6049-4472-85bc-d6c5e4088fac"/>
+        <COMPID name="project2 Object diagram" mc="Standard.ObjectDiagram" uid="3fbeb2fd-0941-466b-b2d6-51a3ff033780"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

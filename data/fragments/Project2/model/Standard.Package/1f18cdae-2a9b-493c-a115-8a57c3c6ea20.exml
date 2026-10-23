@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Model" version="4">
+  <OBJECT>
+    <ID name="Model" mc="Standard.Package" uid="1f18cdae-2a9b-493c-a115-8a57c3c6ea20"/>
+    <PID name="class diagram" mc="Standard.Package" uid="28df5c84-161a-401c-ad73-0b4366d274f3"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Model]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Product">
+        <COMPID name="model diagram" mc="Standard.ClassDiagram" uid="0972edf8-6d78-4368-a8e9-93aec2d26e56"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

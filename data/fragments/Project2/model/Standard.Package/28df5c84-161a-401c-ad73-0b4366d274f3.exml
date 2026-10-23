@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="class diagram" version="4">
+  <OBJECT>
+    <ID name="class diagram" mc="Standard.Package" uid="28df5c84-161a-401c-ad73-0b4366d274f3"/>
+    <PID name="Project2" mc="Standard.Project" uid="11448a97-04f3-46d5-b071-410255d05b90"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[class diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Model" mc="Standard.Package" uid="1f18cdae-2a9b-493c-a115-8a57c3c6ea20"/>
+        <COMPID name="View" mc="Standard.Package" uid="379c93d7-c42b-4567-aabe-63c87eeee215"/>
+        <COMPID name="Controller" mc="Standard.Package" uid="82d4418d-d7eb-48b5-a1f3-b8a5d647bb2b"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="MVC Class diagram" mc="Standard.ClassDiagram" uid="99ab9ee5-ebf4-47bd-8990-e2a9b8e5f196"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

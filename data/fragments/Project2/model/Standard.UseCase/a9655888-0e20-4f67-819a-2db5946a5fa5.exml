@@ -1,0 +1,143 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Бронирование занятия или полёта" version="4">
+  <OBJECT>
+    <ID name="Бронирование занятия или полёта" mc="Standard.UseCase" uid="a9655888-0e20-4f67-819a-2db5946a5fa5"/>
+    <PID name="use case view" mc="Standard.Package" uid="010a982e-146d-45f8-94cc-f3c4bff3b572"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Бронирование занятия или полёта]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Used">
+        <OBJECT>
+          <ID name="UseCaseDependency" mc="Standard.UseCaseDependency" uid="d31f6ee8-3a29-455e-afa7-34efd9e137a7"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[UseCaseDependency]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="оплата выбранных услуг" mc="Standard.UseCase" uid="9eb64329-f00f-41a9-80ea-6dc8d7d2dbe8"/>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID name="include" mc="Infrastructure.Stereotype" uid="00000000-0000-9c49-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="eebc7caf-10d5-45fe-a4d4-d5e7d9a7bf98"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...Создать запись на услугу.
+Основной поток:
+3.1. Пользователь выбирает свободный слот (месяц, день, время).
+3.2. Система запрашивает параметры бронирования.
+3.3. Пользователь выбирает вид услуги (обучение или просто полет).
+3.4. Пользователь выбирает вид обучения (групповое/индивидуальное).
+3.5. Пользователь выбирает тип устройства (парашют, дельтаплан, параплан, аэроплан).
+3.6. Пользователь выбирает адрес площадки.
+3.7. Пользователь указывает количество человек.
+3.8. Система проверяет ограничение по времени (не ранее чем через 2 часа от текущего момента).
+3.9. Система проверяет отсутствие двойного бронирования на этот слот.
+3.10. Система рассчитывает стоимость, учитывая наличие VIP-статуса.
+3.11. Система перенаправляет пользователя на оплату.
+3.12. После успешной оплаты Система сохраняет бронь и присваивает ей статус «Подтверждена».
+]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="8229bf9e-81ee-46d3-8a68-8e814eb4aec3"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="constraint" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-251b-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="b4c77403-4b64-4ce0-84b7-b18f01106bec"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="non-functional constraint" mc="Infrastructure.NoteType" uid="00bc0c08-0000-242c-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="1eb34e54-6b50-4c88-afa5-da1f419cf78c"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...Альтернативный поток A1 (Нарушение ограничения времени):
+A1.1. На шаге 3.8 Система обнаруживает, что выбранное время менее чем через 2 часа.
+A1.2. Система блокирует выбор и выдает предупреждение.
+A1.3. Возврат к шагу 3.1.
+Альтернативный поток A2 (Слот занят):
+A2.1. На шаге 3.9 Система обнаруживает, что слот уже забронирован другим пользователем.
+A2.2. Система выдает сообщение об ошибке и предлагает выбрать другое время.
+A2.3. Возврат к шагу 3.1.
+]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="exception" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-2519-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="65c615d3-b457-42ef-bd64-84cb3991a2a5"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...Авторизация выполнена, есть свободные слоты.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="precondition" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-2515-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="24e29382-9fba-4671-ac15-3eb9f74a6807"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...Бронь создана, устройство и инструктор зарезервированы.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="postcondition" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-2517-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

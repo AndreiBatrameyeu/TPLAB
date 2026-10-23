@@ -1,0 +1,129 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="просмотр своих броней" version="4">
+  <OBJECT>
+    <ID name="просмотр своих броней" mc="Standard.UseCase" uid="71cb01f9-c079-4817-9b6a-f23cdf5da94e"/>
+    <PID name="use case view" mc="Standard.Package" uid="010a982e-146d-45f8-94cc-f3c4bff3b572"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[просмотр своих броней]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Activity" mc="Standard.Activity" uid="5c295116-be5f-4535-955d-7b99ff979aec"/>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="0620b7e0-10f1-4d9d-b9cc-b4ec4f344e3a"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...Получить информацию о своих записях.
+Основной поток:
+5.1. Клиент переходит в раздел «Мои брони».
+5.2. Система выбирает из БД все активные и архивные брони (включая абонементы) данного клиента.
+5.3. Система отображает список броней.
+]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="003e6d1a-0d7d-4938-bcce-fed7b60bcdc3"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="constraint" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-251b-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="0dea8d91-3425-414f-bd34-445f94d19f65"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="non-functional constraint" mc="Infrastructure.NoteType" uid="00bc0c08-0000-242c-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="61e4a867-0a09-4940-adc6-eab4ddb9f49b"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...Дополнительный поток D1 (Детализация):
+D1.1. Клиент выбирает конкретную бронь.
+D1.2. Система отображает полную информацию (адрес площадки, тип устройства, статус оплаты).
+
+Дополнительный поток D2:
+D2.1 Клиент выбирает просмотр своих активных и архивных абонементов
+D2.2. Клиент переходит в раздел "Мои абонементы"
+D2.3 Система отображает список всех активных и архивных абонементов.
+
+Дополнительный поток D3: 
+D3.1. Клиент выбирает определённый абонемент.
+D3.2. Система отображает полную информацию об абонементе.
+
+Альтернативный поток D4:
+D4.1 На этапе 5.2 система не обнаруживает броней
+D4.2. Система отображает сообщение об отсутствии броней
+
+]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="exception" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-2519-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="08b1b484-ea84-4698-8516-b67ba1d291de"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...Клиент авторизован.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="precondition" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-2515-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="005b70d7-f6d5-4bd5-9994-4f63d3b03c2f"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...Клиент ознакомлен со своими записями и абониментами.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="postcondition" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-2517-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

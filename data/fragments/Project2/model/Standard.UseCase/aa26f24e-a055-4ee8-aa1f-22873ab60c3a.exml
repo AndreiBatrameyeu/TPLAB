@@ -1,0 +1,135 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Заморозка абонемента" version="4">
+  <OBJECT>
+    <ID name="Заморозка абонемента" mc="Standard.UseCase" uid="aa26f24e-a055-4ee8-aa1f-22873ab60c3a"/>
+    <PID name="use case view" mc="Standard.Package" uid="010a982e-146d-45f8-94cc-f3c4bff3b572"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Заморозка абонемента]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="49c9c46d-855d-467e-b6d6-994327c3b51e"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Приостановить действие абонемента на определённый срок без потери оплаченных занятий.
+Основной поток:
+
+11.1. Клиент переходит в раздел «Мои абонементы».
+
+11.2. Клиент выбирает активный абонемент и нажимает «Заморозить».
+
+11.3. Система запрашивает срок заморозки (дата начала и дата окончания).
+
+11.4. Клиент указывает срок и подтверждает заморозку.
+
+11.5. Система проверяет, что срок заморозки не превышает максимально допустимый.
+
+11.6. Система приостанавливает действие абонемента на указанный срок.
+
+11.7. Система продлевает срок действия абонемента на количество дней заморозки.
+
+11.8. Система уведомляет клиента об успешной заморозке.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="8396e33c-900a-42eb-a317-6ad074ae7c02"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="constraint" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-251b-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="8474265a-e955-4e9c-9aa1-a3620b458f5a"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="non-functional constraint" mc="Infrastructure.NoteType" uid="00bc0c08-0000-242c-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="7b6b4c4f-1cb2-4808-81a7-6d637978d920"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Альтернативный поток A1 (Превышен срок заморозки):
+
+A1.1. На шаге 11.5 Система обнаруживает, что указанный срок превышает максимально допустимый.
+
+A1.2. Система выдает сообщение об ошибке и предлагает указать меньший срок.
+
+A1.3. Возврат к шагу 11.3.
+
+Альтернативный поток A2 (Абонемент уже заморожен):
+
+A2.1. На шаге 11.2 Система обнаруживает, что абонемент уже находится в состоянии заморозки.
+
+A2.2. Система выдает сообщение «Абонемент уже заморожен».
+
+A2.3. Возврат к шагу 11.1.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="exception" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-2519-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="0f2b910b-896d-4823-b97c-1f43a97b8f0c"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[У клиента есть активный абонемент (курс, месяц занятий).]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="precondition" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-2515-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="1181f036-13c5-4328-b9c7-ea7c09397e5b"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Абонемент заморожен, срок действия продлён.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="postcondition" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-2517-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

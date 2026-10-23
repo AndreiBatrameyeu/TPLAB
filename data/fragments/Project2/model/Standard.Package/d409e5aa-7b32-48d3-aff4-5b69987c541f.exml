@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Controller" version="4">
+  <OBJECT>
+    <ID name="Controller" mc="Standard.Package" uid="d409e5aa-7b32-48d3-aff4-5b69987c541f"/>
+    <PID name="project2" mc="Standard.Package" uid="eb7b41b3-7460-4d78-9d5e-e7140cacecd1"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Controller]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="PaymentController" mc="Standard.Class" uid="891c603d-edcb-4fb8-a6e3-c1b4e03a37d8"/>
+        <COMPID name="AuthorizationController" mc="Standard.Class" uid="f1b01f43-8878-4e9c-bf19-47ad176d8199"/>
+        <COMPID name="BookingController" mc="Standard.Class" uid="04ce1c08-79c7-4467-a410-236fd58a9557"/>
+        <COMPID name="VIPController" mc="Standard.Class" uid="935dfc56-2f3e-4fc1-bffc-c60c0b0c5255"/>
+        <COMPID name="ScheduleController" mc="Standard.Class" uid="a540ee3c-5f30-42a6-84e3-5600eea029a3"/>
+        <COMPID name="AdminController" mc="Standard.Class" uid="43441653-c0bb-431c-ad27-9b20b965c29d"/>
+        <COMPID name="ReportController" mc="Standard.Class" uid="2d92a01c-9178-4608-88e9-a7c8406f5294"/>
+      </COMP>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Dependency" uid="6e9766d0-cb80-4196-b6a4-50c2665e03e5"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="View" mc="Standard.Package" uid="5a2aca82-63e5-41cf-bd3a-05b686df3a32"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Dependency" uid="eaee5e8d-605d-4f2b-8b3c-37550a33b151"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="Model" mc="Standard.Package" uid="ebc5a2b9-90ae-4cb7-8eca-b532f662bab5"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

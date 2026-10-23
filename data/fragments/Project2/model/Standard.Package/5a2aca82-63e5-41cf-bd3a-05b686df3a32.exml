@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="View" version="4">
+  <OBJECT>
+    <ID name="View" mc="Standard.Package" uid="5a2aca82-63e5-41cf-bd3a-05b686df3a32"/>
+    <PID name="project2" mc="Standard.Package" uid="eb7b41b3-7460-4d78-9d5e-e7140cacecd1"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[View]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="LoginView" mc="Standard.Class" uid="cf8b9cde-fef9-46da-a528-e648c8361381"/>
+        <COMPID name="ScheduleView" mc="Standard.Class" uid="c593fc77-dcd5-42f5-91fd-17d4a8c83ac1"/>
+        <COMPID name="BookingForm" mc="Standard.Class" uid="a00f35ff-c5d1-45c2-a18b-944b33fd4376"/>
+        <COMPID name="AdminPanelView" mc="Standard.Class" uid="44a12b30-ab7d-4ef7-a999-4d176497eba6"/>
+        <COMPID name="PaymentView" mc="Standard.Class" uid="c34dc9eb-6927-427b-bd01-d275a459beed"/>
+        <COMPID name="ReportView" mc="Standard.Class" uid="d60d9f3b-894f-4bbd-9194-e9dbf91b8e2d"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="use case view" version="4">
+  <OBJECT>
+    <ID name="use case view" mc="Standard.Package" uid="010a982e-146d-45f8-94cc-f3c4bff3b572"/>
+    <PID name="project2" mc="Standard.Package" uid="eb7b41b3-7460-4d78-9d5e-e7140cacecd1"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[use case view]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="инструктор" mc="Standard.Actor" uid="ddff260e-8dd6-45b5-ac3f-28c27a225ec0"/>
+        <COMPID name="администратор" mc="Standard.Actor" uid="daaa930b-7113-4058-97fe-97c90190f6c1"/>
+        <COMPID name="руководитель организации" mc="Standard.Actor" uid="dfcae13f-e65e-4bd1-a37f-be805adc7596"/>
+        <COMPID name="клиент" mc="Standard.Actor" uid="dee00501-6fa0-4146-bcd9-9cb89302c886"/>
+        <COMPID name="Пользователь" mc="Standard.Actor" uid="80961864-fd04-4ab4-aedc-33aa9274d10e"/>
+        <COMPID name="система оплаты" mc="Standard.Actor" uid="bf6aa268-2ac3-4492-867c-ac4948858d97"/>
+        <COMPID name="Авторизация в системе" mc="Standard.UseCase" uid="987a005b-fa5b-4642-a02f-ecd49d169287"/>
+        <COMPID name="Просмотр расписания свободного для брони времени" mc="Standard.UseCase" uid="a2a0dce1-b432-4ccd-aabd-acf38f8a1d57"/>
+        <COMPID name="Бронирование занятия или полёта" mc="Standard.UseCase" uid="a9655888-0e20-4f67-819a-2db5946a5fa5"/>
+        <COMPID name="Отмена брони " mc="Standard.UseCase" uid="415dd18c-0765-450e-9468-f997fcfc3acf"/>
+        <COMPID name="просмотр рабочего расписания " mc="Standard.UseCase" uid="bb610783-df34-442c-9591-e98593842fcb"/>
+        <COMPID name="просмотр своих броней" mc="Standard.UseCase" uid="71cb01f9-c079-4817-9b6a-f23cdf5da94e"/>
+        <COMPID name="Просмотр отчетов и графиков" mc="Standard.UseCase" uid="f19ac63a-b5d2-41f2-b4f2-b4685ee9f724"/>
+        <COMPID name="Заморозка абонементов" mc="Standard.UseCase" uid="a4ed8dc5-f818-4a00-a6f5-642c7e4d4694"/>
+        <COMPID name="Приём заказа" mc="Standard.UseCase" uid="d733a09e-9ad8-4b40-8794-273cc2508b23"/>
+        <COMPID name="оплата выбранных услуг" mc="Standard.UseCase" uid="9eb64329-f00f-41a9-80ea-6dc8d7d2dbe8"/>
+        <COMPID name="присвоение VIP-статуса" mc="Standard.UseCase" uid="8bacb5e0-b4e9-4e6c-a6b5-e2eb2401a3bb"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="use case view Use Case diagram" mc="Standard.UseCaseDiagram" uid="cf5631ed-8647-4655-99b0-571760b90097"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

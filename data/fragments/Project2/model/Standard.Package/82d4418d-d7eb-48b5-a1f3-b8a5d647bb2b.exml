@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Controller" version="4">
+  <OBJECT>
+    <ID name="Controller" mc="Standard.Package" uid="82d4418d-d7eb-48b5-a1f3-b8a5d647bb2b"/>
+    <PID name="class diagram" mc="Standard.Package" uid="28df5c84-161a-401c-ad73-0b4366d274f3"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Controller]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="IPaymentSystem" mc="Standard.Interface" uid="44cacaed-75cb-4f81-b6c0-478bf011ad71"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
